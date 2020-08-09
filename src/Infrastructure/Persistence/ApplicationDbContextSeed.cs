@@ -10,11 +10,11 @@ namespace CleanArchitecture.Infrastructure.Persistence
     {
         public static async Task SeedDefaultUserAsync(UserManager<ApplicationUser> userManager)
         {
-            var defaultUser = new ApplicationUser { UserName = "administrator@localhost", Email = "administrator@localhost" };
+            var defaultUser = new ApplicationUser { UserName = "houssamfarid@yahoo.com", Email = "houssamfarid@yahoo.com" };
 
             if (userManager.Users.All(u => u.UserName != defaultUser.UserName))
             {
-                await userManager.CreateAsync(defaultUser, "Administrator1!");
+                await userManager.CreateAsync(defaultUser, "g0@headAsi");
             }
         }
 
