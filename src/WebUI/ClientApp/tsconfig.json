@@ -2,6 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "downlevelIteration": true,
     "module": "esnext",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
@@ -16,6 +17,11 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "angular-admin-lte": [
+        "library/angular-admin-lte/src"
+      ]
+    }
   }
 }
